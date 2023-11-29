@@ -4,7 +4,7 @@
     {% block head %}
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="icon" href="{{ url_for('static', filename='img/favicon.png') }}">
+        <link rel="icon" href="{{ url_for('static', filename='img/weodns.svg') }}">
         {% block title %}<title>{{ SITE_NAME }}</title>{% endblock %}
         <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/source_sans_pro.css') }}">
@@ -50,13 +50,13 @@
     <aside class="main-sidebar sidebar-dark-primary">
         <!-- Logo -->
         <a href="{{ url_for('index.index') }}" class="brand-link">
-            <img src="{{ url_for('static', filename='img/favicon.png') }}" alt="PowerDNS-Admin FavIcon"
+            <img src="{{ url_for('static', filename='img/weodns.svg') }}" alt="WeoDNS favicon"
                  class="brand-image img-circle elevation-3" style="opacity: .8">
             <span class="brand-text font-weight-light">
         {% if SETTING.get('site_name') %}
             <b>{{ SITE_NAME }}</b>
         {% else %}
-            <b>PowerDNS</b>-Admin
+            <b>WeoDNS</b>
         {% endif %}
       </span>
         </a>
@@ -226,9 +226,7 @@
     </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer">
-        <strong><a href="https://github.com/PowerDNS-Admin/PowerDNS-Admin">PowerDNS-Admin</a></strong> - A PowerDNS web
-        interface with advanced features.
-        <span class="float-right">Version 0.4.1</span>
+        © 2023 WeoDNS
     </footer>
 </div>
 <!-- ./wrapper -->
